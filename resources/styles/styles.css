@@ -149,6 +149,55 @@ footer {
 @media screen and (min-width: 1200px ) {
     main {
         display: grid;
-        grid-template: repeat(50, 1fr) / repeat(20, 1fr);
+        grid-template: repeat(28, 1fr) / repeat(20, 1fr);
+    }
+    #imgContainer {
+        grid-area: 2 / 13 / span 20 / span 10;
+    }
+    main h1 {
+        grid-area: 2 / 6 / span 2 / span 3;
+    }
+    #textOne {
+        grid-area:  4 / 2 / span 3 / span 10; 
+    }
+    #divOne {
+        grid-area: 7 / 2 / span 1 / span 10;
+    }
+    #textTwo {
+        grid-area: 9 / 2 / span 3 / span 10;
+    }
+    #divTwo {
+        grid-area: 12 / 2 / span 3 / span 10;
+    }
+    #textThree {
+        grid-area: 15 / 6 / span 3 / span 9;
+    }
+    #divThree {
+        grid-area: 18 / 5 / span 3 / span 11;
+    }
+    #textFour {
+        grid-area: 21 / 7 / span 3 / span 8;
+    }
+    #textFive {
+        grid-area: 24 / 1 / span 3 / span 8;
+    }
+    #divFour {
+        border-radius: 0%;
+        grid-area: 27 / 1 / span 2 / span 19;
+    }
+    #textSix {
+        grid-area: 24 / 12 / span 3 / span 8;
+    }
+    #divFive {
+        display: none;
+    }
+
+}
+@media screen and (min-width:1700px){
+    #divThree {
+        grid-area: 18 / 2 / span 3 / span 10;
+    }
+    #textThree {
+        grid-area: 15 / 2 / span 3 / span 10;
     }
 }
