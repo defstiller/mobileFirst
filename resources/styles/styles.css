@@ -1,0 +1,154 @@
+html {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+
+header {                        /* NAV STARTS */
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 6%;
+}
+#nameDiv {                     /* Aligns Heading */
+    font-size: 2rem;
+    position: relative;
+    top:10%;
+    text-align: left;
+    padding-left: 3%;
+}
+
+#navButton {
+    top: 0.5%;
+    right: 1%;
+    position: fixed;
+    background-image: url(../img/iconfinder_menu-alt_134216.png);
+    background-color: black;
+    background-size: cover;
+    height: 2rem;
+    width: 2rem;
+    border: 0;
+    border-radius: 80%;
+    cursor:pointer;
+    outline: 0;
+}
+#hamExit {
+    background-color: black;
+}
+#closeNavButton {
+    background-image: url(../img/iconfinder_add_134224.png);
+    background-color: black;
+    background-size: cover;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 80%;
+    cursor:pointer;
+    border: 0;
+    outline: 0;
+    top: 0.5%;
+    right: 1%;
+    position: fixed;
+}
+#hamburger {
+    position:fixed;
+    z-index: 10;
+    background-color: black;
+    width: 100%;
+    top:0;
+}       
+#hamburger li {
+    padding:10px;
+}
+#hamburger a {
+    color: white;
+}
+
+                            /* NAV ENDS */
+
+                            /* ABOUT ME STARTS */
+#imgContainer img {
+    width: 100%;
+}
+body {
+    text-align: center;
+}
+
+body h1, h3 {
+    margin-top: 5%;
+    font-size: xx-large;
+    font-weight: 700;
+}
+.bodyText {
+    margin: 5% 1%;
+    line-height: 1.1rem;
+}
+.textDivider {
+    margin-left: 10%;
+    height: 5px;
+    width: 80%;
+    background-color: black;
+    border-radius: 100%;
+}                           /* ABOUT ME ENDS */
+
+#funFacts  {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#funFacts button {
+    font-size: x-large;
+    border-radius: 30%;
+    cursor:pointer;
+    outline: 0;
+}
+
+#funFactsLocation {
+    margin-top: 1rem;
+    height: 3rem;
+}
+
+
+footer {
+    height: 2rem;
+    padding-top: 1rem;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width:230px) and (max-width:315px){
+    #nameDiv {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:370px){
+    #nameDiv {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+@media screen and (min-width:750px){
+    #imgContainer {
+        width: 80%;
+        padding-left: 10%;
+    }
+    footer {
+        font-size: x-large;
+    }
+}
+@media screen and (min-height:1200px){
+    #nameDiv {
+        padding-top: 1.5%;
+    }
+    #navButton {
+        top: 1.7%;
+    }
+}
+@media screen and (min-width: 1200px ) {
+    main {
+        display: grid;
+        grid-template: repeat(50, 1fr) / repeat(20, 1fr);
+    }
+}

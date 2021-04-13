@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title> Artiom Asaturov </title>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GLOBAL IMG -->
+    <link rel="shortcut icon" href="./resources/img/iconfinder_20.Photos_290130.png" type="image/x-icon">
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="./resources/styles/reset.css"> 
+    <link rel="stylesheet" href="./resources/styles/styles.css">
+
+    <!-- GLOBAL SCRIPTS -->
+    <!-- Last Updated On script and 1 sec interval-->
+    <script> window.onload = function() {   
+        document.getElementById("lastMod").innerHTML= "Last Updated on " + document.lastModified;
+
+        setInterval(oneSecond, 1000) }
+    </script>
+    <!-- Tab runtime--> 
+    <script> 
+        let time=0
+        function oneSecond() {
+            time+=1, 1000;
+        }
+    </script>
+
+</head>
+
+<body> <!-- BODY STARTS -->
+
+    <header> <!-- HEADER STARTS -->
+        <div id="nameDiv">
+            <h2> Artiom Asaturov </h2>
+        </div>
+
+        <nav> <!-- NAVIGATION STARTS -->
+
+        <div class="navMobile">
+            <button onmousedown="hamButton()" id="navButton"></button> 
+        </div>
+        <div id="hamburger" style="display:none;">                <!-- HAMBURGER STARTS-->
+            <div id="hamExit">
+            <button onmousedown="hamButton()" id="closeNavButton"></button>
+            </div>
+            <ul id="navDropMenu">
+                <li id="projects"><a href="#">My Projects</a> </li>
+                <li id="experience"><a href="#">My Experience </a></li>
+                <li><a href="https://www.linkedin.com/in/artiom-asaturov" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:asaturovartiom@gmail.com">Email Me</a></li>
+                <li id="lastMod"></li>      <!-- HAMBURGER ENDS-->
+            </ul>
+        </div>
+
+
+
+        </nav> <!-- NAVIGATION ENDS -->
+    </header> <!-- HEADER ENDS -->
+
+    <main id="aboutMe"> <!-- ABOUT ME STARTS -->
+        <div id="imgContainer">
+            <img src="./resources/img/aboutMe.jpg" alt="Artiom and his dog">
+            <p class="figCaption">Do you like my doggo?</p>
+            </div>
+        <h1> About Me </h1>
+
+
+        <p class="bodyText">Hello! I'm Artiom Asaturov, I have been part of a beutiful IT world for the past 3 years. As a part of QA team I have aquired extremely valuable skills on my way to becoming a professional developer.
+            I love computers, cars, and most of all continuous growth. I enjoy challenges, as they are the best teachers you can ever find. 
+        </p>
+
+    <div class="textDivider"></div>
+
+        <p class="bodyText">
+            In my free time I like to watch movies, go to the parks, discover new ways to code via social media, Google or YouTube. 
+        </p>
+
+    <div class="textDivider"></div>
+
+        <p class="bodyText">
+            My ultimate goal is to become a Full-Stack Developer, in my eyes programming is like creating a whole new world, and one day I want to be able to create this world from scratch to finish.
+        </p>
+
+    <div class="textDivider"></div>
+
+        <h3>Why do I want to be a developer</h3>
+
+
+        <p class="bodyText">I was born in Ukraine, which is known for its developers talents. I was growing up seeing scary, but beutifull lines of code, and I have always dreamed of being able to write them myself.
+            And now, when I finally started learning JS/HTML/CSS - I realized that coding is something that I want to devote my life to. 
+        </p>
+    <div class="textDivider"></div>
+        <p class="bodyText">
+            I believe that the coding future is going to be even more exciting, and I want to be part of that future.
+        </p>
+    <div class="textDivider"></div>
+
+
+    </main> <!-- ABOUT ME ENDS -->
+        <div id="funFacts">
+            <button onmousedown="generateRandom()">Fun Facts Generator</button>
+            <p id="funFactsLocation"></p>
+    <footer>
+
+        <p>Thank you for visiting! &#128075 </p>
+ 
+    </footer>
+    <script> /* RANDOM FACT GENERATOR START */
+        function generateRandom() {
+           let randomNum = Math.floor(Math.random()*12);
+           switch (randomNum){
+            case 0: 
+                document.getElementById("funFactsLocation").innerHTML='For 20 years, the password to USA nuclear missles were "00000000"';
+                break;
+            case 1:
+                document.getElementById("funFactsLocation").innerHTML="You opened this page "+time+" seconds ago";
+                break;
+            case 2:
+                document.getElementById("funFactsLocation").innerHTML="We only keep 1 out of 10 apps we try"; 
+                break;    
+            case 3:
+                document.getElementById("funFactsLocation").innerHTML="From 2013 to 2017 Amazon created over 44,000 robots for their Distribution Centers";
+                break; 
+
+            case 4:
+            document.getElementById("funFactsLocation").innerHTML="Appolo 11 astranauts couldn't afford insurance";
+                break; 
+
+            case 5:
+            document.getElementById("funFactsLocation").innerHTML="November 30 is Computer Security Day";
+                break; 
+
+            case 6: 
+                document.getElementById("funFactsLocation").innerHTML="The first oranges weren’t orange";
+                break;
+            case 7:
+                document.getElementById("funFactsLocation").innerHTML='A cow-bison hybrid is called a “beefalo”';
+                break;
+            case 8:
+                document.getElementById("funFactsLocation").innerHTML='Scotland has 421 words for “snow”'; 
+                break;    
+            case 9:
+                document.getElementById("funFactsLocation").innerHTML="Cats have fewer toes on their back paws";
+                break; 
+
+            case 10:
+            document.getElementById("funFactsLocation").innerHTML="That tiny pocket in jeans was designed to store pocket watches";
+                break; 
+
+            case 11:
+            document.getElementById("funFactsLocation").innerHTML="Thanks to 3D printing, NASA can basically “email” tools to astronauts";
+                break; 
+            case 12: 
+                document.getElementById("funFactsLocation").innerHTML="There were active volcanoes on the moon when dinosaurs were alive";
+                break;
+            case 13:
+                document.getElementById("funFactsLocation").innerHTML="The first person convicted of speeding was going eight mph";
+                break;
+            case 14:
+                document.getElementById("funFactsLocation").innerHTML="The severed head of a sea slug can grow a whole new body"; 
+                break;    
+            case 15:
+                document.getElementById("funFactsLocation").innerHTML="Some sea snakes can breathe through their skin";
+                break; 
+
+            case 16:
+            document.getElementById("funFactsLocation").innerHTML="The moon has moonquakes";
+                break; 
+
+            case 17:
+            document.getElementById("funFactsLocation").innerHTML="Goosebumps are meant to ward off predators";
+                break; 
+
+            case 18: 
+                document.getElementById("funFactsLocation").innerHTML="Humans are the only animals that blush";
+                break;
+            case 19:
+                document.getElementById("funFactsLocation").innerHTML="Your nostrils work one at a time";
+                break;
+            case 20:
+                document.getElementById("funFactsLocation").innerHTML='The "M\'s" in M&Ms stand for "Mars" and "Murrie."'; 
+                break;    
+            case 21:
+                document.getElementById("funFactsLocation").innerHTML="Copper door knobs are self-disinfecting";
+                break; 
+
+            case 22:
+            document.getElementById("funFactsLocation").innerHTML="Chewing gum boosts concentration";
+                break; 
+
+            case 23:
+            document.getElementById("funFactsLocation").innerHTML="The total weight of ants on earth once equaled the total weight of people";
+                break; 
+        }
+        }  /* RANDOM FACT GENERATOR END */
+
+        function hamButton(){
+            let checkHiddenHam = document.getElementById("hamburger");
+            let navButton = document.getElementById("navButton")
+            if (checkHiddenHam.style.display === "none") {
+                checkHiddenHam.style.display="block";
+            }
+            else{
+                checkHiddenHam.style.display="none";
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body> <!-- BODY ENDS -->
+
+
+</html>
