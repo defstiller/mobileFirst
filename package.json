@@ -1,0 +1,23 @@
+{
+  "name": "mobilefirst",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "firebase": "^8.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/defstiller/mobileFirst.git"
+  },
+  "author": "Gizo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/defstiller/mobileFirst/issues"
+  },
+  "homepage": "https://github.com/defstiller/mobileFirst#readme"
+}
