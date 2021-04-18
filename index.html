@@ -50,11 +50,11 @@
             <button onmousedown="hamButton()" id="closeNavButton"></button>
             </div>
             <ul id="navDropMenu">
-                <li id="projects"><a href="#">My Projects</a> </li>
-                <li id="experience"><a href="#">My Experience </a></li>
-                <li><a href="https://www.linkedin.com/in/artiom-asaturov" target="_blank">LinkedIn</a></li>
-                <li><a href="mailto:asaturovartiom@gmail.com">Email Me</a></li>
-                <li id="lastMod"></li>      <!-- HAMBURGER ENDS-->
+                <li id="projects" class="navList"><a href="#" class="navList">My Projects</a> </li>
+                <li id="experience" class="navList"><a href="#" class="navList">My Experience </a></li>
+                <li class="navList"><a class="navList" href="https://www.linkedin.com/in/artiom-asaturov" target="_blank">LinkedIn</a></li>
+                <li class="navList"><a class="navList" href="mailto:asaturovartiom@gmail.com">Email Me</a></li>
+                <li id="lastMod" class="navList"></li>      <!-- HAMBURGER ENDS-->
             </ul>
         </div>
 
@@ -113,7 +113,7 @@
     </footer>
     <script> /* RANDOM FACT GENERATOR START */
         function generateRandom() {
-           let randomNum = Math.floor(Math.random()*12);
+           let randomNum = Math.floor(Math.random()*23);
            switch (randomNum){
             case 0: 
                 document.getElementById("funFactsLocation").innerHTML='For 20 years, the password to USA nuclear missles were "00000000"';
@@ -200,16 +200,33 @@
         }
         }  /* RANDOM FACT GENERATOR END */
 
-        function hamButton(){
+
+        function hamButton(){ /* HAMBURGER BUTTON SCRIPT */
             let checkHiddenHam = document.getElementById("hamburger");
-            let navButton = document.getElementById("navButton")
-            if (checkHiddenHam.style.display === "none") {
+            let navButton = document.getElementById("navButton");
+            let closeNav = document.getElementById("closeNavButton");
+             
+
+
+            if (checkHiddenHam.style.display === "none") { /* CHECKS IF HAMBURGER IS HIDDEN, IF IT IS - WHEN MOUSE TRIGGERED WILL DISPLAY IT */ 
                 checkHiddenHam.style.display="block";
-            }
+
+                
+                /* Hide element on click somewhere else NOT WORKING YET 
+                window.addEventListener("mousedown", function(event){
+                if (event.target != checkHiddenHam && event.target != navButton && event.target != checkHiddenHam.parentElement) {
+                checkHiddenHam.style.display="none" }
+                else {
+                    checkHiddenHam.style.display="block"
+                }
+            } )*/
+        }
+            
             else{
                 checkHiddenHam.style.display="none";
             }
         }
+
     </script>
 
 
